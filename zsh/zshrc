@@ -1,0 +1,8 @@
+export ZDOTDIR=${HOME}/dotfiles/zsh
+source ${ZDOTDIR}/oh-my-zsh.zsh
+for config_file (${ZDOTDIR}/zsh.d/*.zsh(N)) source $config_file
+
+PROMPT='$FG[220][%M]%{$reset_color%} $FG[129]%~%{$reset_color%} %{$GIT_PROMPT_INFO%}$(git_prompt_info)%{$GIT_DIRTY_COLOR%}$(git_prompt_status) %{$reset_color%}%{$PROMPT_PROMPT%}
+$FG[196]❯%{$reset_color%}$FG[083]❯%{$reset_color%}$FG[051]❯%{$reset_color%} '
+
+eval "$(fasd --init auto)"

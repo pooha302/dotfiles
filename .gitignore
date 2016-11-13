@@ -1,0 +1,12 @@
+ssh/*.key
+ssh/id_rsa
+ssh/id_rsa.pub
+ssh/known_hosts
+ssh/authorized_keys
+
+vim/bundle
+vim/.netrwhist
+vim/view
+
+zsh/.zcompdump*
+zsh/zsh.d/*.local.zsh
