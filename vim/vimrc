@@ -1,5 +1,4 @@
 syntax on 		"언어에 따른 자동 문법, 구문의 색을 다르게 표시
-"colorscheme koehler
 
 set bg=dark
 set ru 			"화면 우측 하단에 현재 커서의 위치(줄, 칸)를 표시. (ruler)
@@ -12,8 +11,6 @@ set sw=4 		"자동들여쓰기를 4칸으로 설정. (shift width)
 set ts=4 		"tab 간격을 4칸으로 설정. (tab stop)
 set hls
 set ignorecase 	"검색 시 대소문자 무시
-"set wildmenu
-"set wildmode=list:longest,full
 set laststatus=2
 set t_Co=256
 set splitright
@@ -45,7 +42,7 @@ Bundle 'vim-airline/vim-airline'
 Bundle 'vim-airline/vim-airline-themes'
 Bundle 'kien/ctrlp.vim'
 Bundle 'jade.vim'
-"Bundle 'Syntastic'
+Bundle 'motus/pig.vim'
 
 filetype plugin indent on
 
