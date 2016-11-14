@@ -5,7 +5,7 @@ git clone --recursive -j8 http://git.pooha302.com/pooha302/dotfiles.git
 
 # Install
 - install.sh 실행
-	- paramter : vim, zsh, all
+	- parameter : vim, zsh, all
 	- 하나만 설치하고 싶으면 parameter로 vim, zsh 중 선택해서 입력
 	- 모두 설치하고 싶으면 all을 입력
 
