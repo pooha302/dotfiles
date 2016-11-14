@@ -1,0 +1,1 @@
+/home/harock/dotfiles/zsh

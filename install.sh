@@ -47,7 +47,8 @@ function install_zsh() {
 	create_symbolic_link $dotfiles_dir/zsh/zshrc ~/.zshrc
 	create_symbolic_link $dotfiles_dir/zsh/oh-my-zsh ~/.oh-my-zsh
 
-	echo "cp oh-my-zsh plugins" cp -R $dotfiles_dir/zsh/oh-my-zsh-plugins/* ~/.oh-my-zsh/custom/plugins/
+	echo "[zsh] cp oh-my-zsh plugins" 
+	cp -R $dotfiles_dir/zsh/oh-my-zsh-plugins/* ~/.oh-my-zsh/custom/plugins/
 
 	if [ -z "$(which fasd)" ]; then
 		local current_dir=$(echo "$PWD")
