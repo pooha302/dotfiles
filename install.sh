@@ -1,22 +1,16 @@
 #!/bin/bash
 
 dotfiles_dir=$(dirname $(readlink -f "$0"))
-[ $? -ne 0 ] && dotfiles_dir=~/dotfiles
+[ $? -ne 0 ] && dotfiles_dir=~/.dotfiles
 backup_dir=~/dotfiles_bak
 
 function backup_exist() {
 	local target=$1
 	local destination=$2
 
-	if [[ -d "${target}" ]]; then
+	if [[ "$(ls -A ${target})" ]]; then
 		mkdir -p $backup_dir
-		echo "[backup exist directory] move ${target} to ${destination}"
-		mv ${target} ${destination}	
-	fi
-
-	if [[ -f "${target}" ]]; then
-		mkdir -p $backup_dir
-		echo "[backup exist directory] move ${target} to ${destination}"
+		echo "[backup exist] move ${target} to ${destination}"
 		mv ${target} ${destination}	
 	fi
 }
