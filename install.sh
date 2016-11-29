@@ -32,6 +32,12 @@ function install_vim() {
 	create_symbolic_link $dotfiles_dir/vim/vimrc ~/.vimrc
 }
 
+function install_tmux() {
+	backup_exist ~/.tmux.conf $backup_dir/tmux.conf
+
+	create_symbolic_link $dotfiles_dir/tmux/tmux.conf ~/.tmux.conf
+}
+
 function install_zsh() {
 	backup_exist ~/.zshrc $backup_dir/zshrc
 	backup_exist ~/.zsh $backup_dir/zsh
@@ -57,11 +63,15 @@ case "${1:-''}" in
 	'vim')
 		install_vim
 		;;
+	'tmux')
+		install_tmux
+		;;
 	'zsh')
 		install_zsh
 		;;
 	'all')
 		install_vim
+		install_tmux
 		install_zsh
 		;;
 	*)
