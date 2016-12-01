@@ -9,4 +9,5 @@ vim/.netrwhist
 vim/view
 
 zsh/.zcompdump*
+zsh/.zshrc
 zsh/zsh.d/*.local.zsh
