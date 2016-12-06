@@ -45,6 +45,7 @@ function install_zsh() {
 
 	create_symbolic_link $dotfiles_dir/zsh ~/.zsh
 	create_symbolic_link $dotfiles_dir/zsh/zshrc ~/.zshrc
+	create_symbolic_link $dotfiles_dir/zsh/zshrc $dotfiles_dir/zsh/.zshrc
 	create_symbolic_link $dotfiles_dir/zsh/oh-my-zsh ~/.oh-my-zsh
 
 	echo "[zsh] cp oh-my-zsh plugins" 
