@@ -43,6 +43,7 @@ Bundle 'vim-airline/vim-airline-themes'
 Bundle 'kien/ctrlp.vim'
 Bundle 'jade.vim'
 Bundle 'motus/pig.vim'
+Bundle 'AutoClose'
 
 filetype plugin indent on
 
