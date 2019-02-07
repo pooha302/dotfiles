@@ -1,6 +1,6 @@
 # Download
 ```bash
-git clone --recursive -j8 http://git.pooha302.com/pooha302/dotfiles.git ~/.dotfiles
+git clone --recursive -j8 https://github.com/pooha302/dotfiles.git ~/.dotfiles
 ```
 git 2.8 이전은 `-j8` 옵션 없이 실행
 
