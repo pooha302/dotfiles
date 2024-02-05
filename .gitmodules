@@ -10,6 +10,3 @@
 [submodule "zsh/fasd"]
 	path = zsh/fasd
 	url = https://github.com/clvv/fasd.git
-[submodule "zsh/oh-my-zsh-plugins/zsh-autosuggestions"]
-	path = zsh/oh-my-zsh-plugins/zsh-autosuggestions
-	url = https://github.com/zsh-users/zsh-autosuggestions

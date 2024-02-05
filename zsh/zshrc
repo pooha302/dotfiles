@@ -6,3 +6,9 @@ PROMPT='$FG[220][%M]%{$reset_color%} $FG[129]%~%{$reset_color%} %{$GIT_PROMPT_IN
 $FG[196]❯%{$reset_color%}$FG[083]❯%{$reset_color%}$FG[051]❯%{$reset_color%} '
 
 eval "$(fasd --init auto)"
+
+export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1
+export PATH="$PATH:/home/harock/.local/bin"
+export GRADLE_HOME=/opt/gradle/latest
+export PATH=${GRADLE_HOME}/bin:${PATH}
+
