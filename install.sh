@@ -38,6 +38,18 @@ function install_tmux() {
 	create_symbolic_link $dotfiles_dir/tmux/tmux.conf ~/.tmux.conf
 }
 
+function install_package() {
+	local pkg=$1
+	if [ -z "$(which $pkg)" ]; then
+		echo "[install] installing ${pkg}..."
+		if [[ "$OSTYPE" == "darwin"* ]]; then
+			brew install $pkg
+		elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
+			sudo apt-get install -y $pkg
+		fi
+	fi
+}
+
 function install_zsh() {
 	backup_exist ~/.zshrc $backup_dir/zshrc
 	backup_exist ~/.zsh $backup_dir/zsh
@@ -58,6 +70,9 @@ function install_zsh() {
 		sudo make install
 		cd $current_dir
 	fi
+
+	install_package lolcat
+	install_package figlet
 }
 
 case "${1:-''}" in
